@@ -1,7 +1,7 @@
 <header 
-[ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}">
-<h2>{{medium}}</h2>
-<div>{{ mediaItems | categoryList }}</div>
+    [ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}">
+    <h2>{{medium}}</h2>
+    <div>{{ mediaItems | categoryList }}</div>
 </header>
 <section>
   <app-media-item
@@ -11,7 +11,7 @@
     (delete)="onMediaItemDelete($event)"></app-media-item>
 </section>
 <footer>
-  <a>
+  <a routerLink="/add">
     <img src="assets/media/01.png" class="icon" />
   </a>
 </footer>

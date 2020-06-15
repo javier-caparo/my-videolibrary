@@ -1,11 +1,11 @@
 <nav>
-  <a>
+  <a routerLink="/">
     <img src="assets/media/04.png" class="icon" />
   </a>
-  <a>
+  <a routerLink="/Movies">
     <img src="assets/media/03.png" class="icon" />
   </a>
-  <a>
+  <a routerLink="/Series">
     <img src="assets/media/02.png" class="icon" />
   </a>
 </nav>
@@ -14,6 +14,5 @@
     <h1>Media Watch List</h1>
     <p class="description">Keeping track of the media I want to watch.</p>
   </header>
-  <app-media-item-form></app-media-item-form>
-  <app-media-item-list></app-media-item-list>
+  <router-outlet></router-outlet>
 </section>
