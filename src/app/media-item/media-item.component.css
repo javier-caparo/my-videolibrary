@@ -14,10 +14,10 @@ h2 {
 }
 
 :host.medium-movies {
-    border-color: #black;
+    border-color: #53ace4;
 }
 :host.medium-movies > h2 {
-    color: #black;
+    color: #53ace4;
 }
 :host.medium-series {
     border-color: #45bf94;
