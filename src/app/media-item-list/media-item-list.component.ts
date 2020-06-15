@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 import { MediaItemService } from './../media-item.service';
 
@@ -9,16 +9,21 @@ import { MediaItemService } from './../media-item.service';
 })
 export class MediaItemListComponent implements OnInit {
 
-  mediaItems; 
-  
-  constructor(private mediaItemService: MediaItemService) { }
+ 
+  mediaItems
+
+  constructor(
+    private mediaItemService: MediaItemService,
+  ) {}
 
   ngOnInit(): void {
     this.mediaItems = this.mediaItemService.get();
   }
 
   onMediaItemDelete(mediaItem) {
-    this.mediaItemService.delete(mediaItem);
+    this.mediaItemService.delete(mediaItem)
+
   }
 
+  g
 }
