@@ -13,5 +13,4 @@ export class MediaItemComponent {
     console.log('deleted');
     this.delete.emit(this.mediaItem);
   }
-
 }
