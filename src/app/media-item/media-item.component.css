@@ -1,0 +1,56 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: auto;
+    border: 2px solid;
+    background-color: #29394b;
+    padding: 10px;
+    color: #bdc2c5;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+:host.medium-movies {
+    border-color: #black;
+}
+:host.medium-movies > h2 {
+    color: #black;
+}
+:host.medium-series {
+    border-color: #45bf94;
+}
+:host.medium-series > h2 {
+    color: #45bf94;
+}
+.tools {
+    margin-top: 8px;
+
+}
+.favorite {
+    width: 24px;
+    height: 24px;
+    fill: #bdc2c5;
+}
+.favorite.is-favorite {
+    fill: #37ad79;
+}
+
+.favorite.is-favorite.is-favorite-hovering {
+    fill: #ec4342;
+}
+
+.delete {
+    padding: 4px;
+    font-size: .8em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.details {
+    padding: 4px;
+    font-size: .8em;
+    border-radius: 4px;
+    text-decoration: none;
+}
